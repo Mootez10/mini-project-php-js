@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link href="/css/output.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <nav class="flex justify-between bg-gray-900 text-white w-full">
+        <div class="px-5 xl:px-12 py-6 flex w-full items-center">
+          <a class="text-3xl font-bold font-heading" href="home.html">
+            3M TECH
+          </a>
+          <!-- Search Bar -->
+          <div class="hidden md:flex flex-grow ml-8">
+            <input style="width: 60%; margin-left: 190px;" type="text" placeholder="Search" class="w-full px-4 py-2 bg-gray-800 text-white rounded-md focus:outline-none focus:bg-gray-700">
+          </div>
+          <ul class="hidden md:flex px-4 mx-auto font-semibold font-heading space-x-12" style="margin-right: 10%;">
+
+
+            <li><a class="hover:text-gray-200" href="home.php">Home</a></li>
+
+
+            <li class="relative" id="dropdownButton">
+                <button class=" hover:text-gray-200 outline-none focus:outline-none flex justify-between" href="#" onclick="toggleDropdown()">
+                    Category
+                    <img width="35" class="-mt-1"  src="./icons.svg" />
+                </button>
+
+            <div id="dropdown"
+            class="lg:absolute bg-blue-950 rounded-md p-2 lg:w-36  mt-2 hidden">
+                <ul class="space-y-2">
+                    <li>
+                        <a href="Iphones.html" class="flex p-2 font-medium text-white-950 rounded-md ">Iphones</a>
+                    </li>
+                    <li>
+                        <a href="smartwatch.html" class="flex p-2 font-medium text-white-950 rounded-md ">Smart Watch</a>
+                    </li>
+                    <li>
+                        <a href="airpods.html" class="flex p-2 font-medium text-white-950 rounded-md ">Airpods</a>
+                    </li>
+                </ul>
+            </div>
+            <script>
+              function toggleDropdown(){
+                let   dropdown = document.querySelector('#dropdownButton #dropdown');
+                dropdown.classList.toggle("hidden");
+              }
+            </script>
+            </li>
+                
+            
+            <li><a class="hover:text-gray-200" href="#">Collections</a></li>
+            <li><a class="hover:text-gray-200" href="Contact.html">Contact Us</a></li>
+          </ul>
+
+
+          <div class="hidden xl:flex items-center space-x-5 ">
+            <a class="hover:text-gray-200" href="Login.php">
+              <!-- Add your Cart icon SVG here -->
+              <img width="35" src="./user.svg" />
+            </a>
+            <a class="hover:text-gray-200" href="#">
+              <img width="40" src="./panier.svg" />
+            </a>
+          </div>
+          <!-- Responsive navbar -->
+          <a class="xl:hidden flex mr-6 items-center" href="#">
+            <!-- Add your Responsive Navbar icon SVG here -->
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 hover:text-gray-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+            </svg>
+          </a>
+          <a class="navbar-burger self-center mr-12 xl:hidden" href="#">
+            <!-- Add your Navbar Burger icon SVG here -->
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 hover:text-gray-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </a>
+        </div>
+      </nav>
+      <div class="w-full bg-gray-800 h-screen">
+        <div class="bg-gradient-to-b from-blue-800 to-blue-600 h-96"></div>
+        <div class="max-w-5xl mx-auto px-6 sm:px-6 lg:px-8 mb-12">
+            <div class="bg-gray-900 w-full shadow rounded p-8 sm:p-12 -mt-80">
+                <p class="text-3xl font-bold leading-7 text-center text-white">Contact Us</p>
+                <form action="" method="post">
+                    <div class="md:flex items-center mt-12">
+                        <div class="w-full md:w-1/2 flex flex-col">
+                            <label class="font-semibold leading-none text-gray-300">Name</label>
+                            <input type="text" class="leading-none text-gray-50 p-3 focus:outline-none focus:border-blue-700 mt-4 border-0 bg-gray-800 rounded" placeholder="enter your name" />
+                        </div>
+                        <div class="w-full md:w-1/2 flex flex-col md:ml-6 md:mt-0 mt-4">
+                            <label class="font-semibold leading-none text-gray-300">Phone</label>
+                            <input type="email" class="leading-none text-gray-50 p-3 focus:outline-none focus:border-blue-700 mt-4 border-0 bg-gray-800 rounded" placeholder="enter your number"/>
+                        </div>
+                    </div>
+                    <div class="md:flex items-center mt-8">
+                        <div class="w-full flex flex-col">
+                            <label class="font-semibold leading-none text-gray-300">Subject</label>
+                            <input type="text" class="leading-none text-gray-50 p-3 focus:outline-none focus:border-blue-700 mt-4 border-0 bg-gray-800 rounded" placeholder=".  .  .  .  .  .  .  .  .  .  .  ."/>
+                        </div>
+                        
+                    </div>
+                    <div>
+                        <div class="w-full flex flex-col mt-8">
+                            <label class="font-semibold leading-none text-gray-300">Message</label>
+                            <textarea type="text" class="h-40 text-base leading-none text-gray-50 p-3 focus:outline-none focus:border-blue-700 mt-4 bg-gray-800 border-0 rounded" placeholder=".  .  .  .  .  .  .  .  .  .  .  ."></textarea>
+                        </div>
+                    </div>
+                    <div class="flex items-center justify-center w-full">
+                        <button class="mt-9 font-semibold leading-none text-white py-4 px-10 bg-blue-700 rounded hover:bg-blue-600 focus:ring-2 focus:ring-offset-2 focus:ring-blue-700 focus:outline-none">
+                            Send message
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    
+</body>
+</html>

@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Airpods</title>
+    <link href="/css/output.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <nav class="flex justify-between bg-gray-900 text-white w-full">
+        <div class="px-5 xl:px-12 py-6 flex w-full items-center">
+          <a class="text-3xl font-bold font-heading" href="home.php">
+            3M TECH
+          </a>
+          <!-- Search Bar -->
+          <div class="hidden md:flex flex-grow ml-8">
+            <input style="width: 60%; margin-left: 190px;" type="text" placeholder="Search" class="w-full px-4 py-2 bg-gray-800 text-white rounded-md focus:outline-none focus:bg-gray-700">
+          </div>
+          <ul class="hidden md:flex px-4 mx-auto font-semibold font-heading space-x-12" style="margin-right: 10%;">
+            <li><a class="hover:text-gray-200" href="home.php">Home</a></li>
+
+            <li class="relative" id="dropdownButton">
+                <button class=" hover:text-gray-200 outline-none focus:outline-none flex justify-between" href="#" onclick="toggleDropdown()">
+                    Category
+                    <img width="35" class="-mt-1"  src="./icons.svg" />
+                </button>
+
+            <div id="dropdown"
+            class="lg:absolute bg-blue-950 rounded-md p-2 lg:w-36  mt-2 hidden">
+                <ul class="space-y-2">
+                    <li>
+                        <a href="Iphones.html" class="flex p-2 font-medium text-white-950 rounded-md ">Iphones</a>
+                    </li>
+                    <li>
+                        <a href="smartwatch.html" class="flex p-2 font-medium text-white-950 rounded-md ">Smart Watch</a>
+                    </li>
+                    <li>
+                        <a href="airpods.html" class="flex p-2 font-medium text-white-950 rounded-md ">Airpods</a>
+                    </li>
+                </ul>
+            </div>
+            <script>
+              function toggleDropdown(){
+                let   dropdown = document.querySelector('#dropdownButton #dropdown');
+                dropdown.classList.toggle("hidden");
+              }
+            </script>
+            </li>
+            <li><a class="hover:text-gray-200" href="#">Collections</a></li>
+            <li><a class="hover:text-gray-200" href="Contact.html">Contact Us</a></li>
+          </ul>
+          <div class="hidden xl:flex items-center space-x-5 ">
+            <a class="hover:text-gray-200" href="Login.php">
+              <!-- Add your Cart icon SVG here -->
+              <img width="35" src="./user.svg" />
+            </a>
+            <a class="hover:text-gray-200" href="#">
+              <img width="40" src="./panier.svg" />
+            </a>
+          </div>
+          <!-- Responsive navbar -->
+          <a class="xl:hidden flex mr-6 items-center" href="#">
+            <!-- Add your Responsive Navbar icon SVG here -->
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 hover:text-gray-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+            </svg>
+          </a>
+          <a class="navbar-burger self-center mr-12 xl:hidden" href="#">
+            <!-- Add your Navbar Burger icon SVG here -->
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 hover:text-gray-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </a>
+        </div>
+      </nav>
+      <div id="top">
+    <section class="bg-white dark:bg-gray-900 h-auto ">
+        <div class="container px-6 py-60 mx-auto " >
+            <div class="lg:flex lg:-mx-2 ">
+                <div class="space-y-3 lg:w-1/5 lg:px-1 lg:space-y-7 -mt-20">
+                    
+                    <a href="home.php" class="block font-medium text-gray-500 dark:text-gray-300 hover:text-sky-600">produits</a>
+                    <a href="Iphones.html" class="block font-medium text-gray-500 dark:text-gray-300 hover:text-sky-600">Iphones</a>
+                    <a href="smartwatch.html" class="block font-medium text-gray-500 dark:text-gray-300 hover:text-sky-600">Smart Watch</a>
+                    <a href="airpods.html" class="block font-medium text-blue-600 dark:text-blue-500 hover:text-sky-600">Airpods</a>
+                    <a href="casques.html" class="block font-medium text-gray-500 dark:text-gray-300 hover:text-sky-600">Casques</a>
+                    <a href="charger.html" class="block font-medium text-gray-500 dark:text-gray-300 hover:text-sky-600">Charger</a>
+                    <a href="TV.html" class="block font-medium text-gray-500 dark:text-gray-300 hover:text-sky-600">TV</a>
+                    <a href="cases.html" class="block font-medium text-gray-500 dark:text-gray-300 hover:text-sky-600">Cases</a>
+                    <a href="microphone.html" class="block font-medium text-gray-500 dark:text-gray-300 hover:text-sky-600">Microphone</a>
+                </div>
+
+                <div class="mt-6 lg:mt-0 lg:px-2 lg:w-4/5 ">
+                    <div class="flex items-center justify-between text-sm tracking-widest uppercase ">
+                        <p class=" text-gray-500 dark:text-gray-300 -mt-40">8 Items</p>
+                        <div class="flex items-center">
+                            <p class="text-gray-500 dark:text-gray-300 -mt-40">Sort</p>
+                            
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 gap-8 mt-8 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+                        <div class="flex flex-col items-center justify-center w-full max-w-lg mx-auto">
+                            <img class="object-cover w-full rounded-md h-72 xl:h-80 -mt-20" src="./images/airnoir.jpg" alt="T-Shirt">
+                            <h4 class="mt-2 text-lg font-medium text-gray-700 dark:text-gray-200">Airpods Black</h4>
+                            <p class="text-blue-500">89dt</p>
+
+                            <button class="flex items-center justify-center w-full px-2 py-2 mt-4 font-medium tracking-wide text-white capitalize transition-colors duration-200 transform bg-gray-800 rounded-md hover:bg-gray-700 focus:outline-none focus:bg-gray-700">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 mx-1" viewBox="0 0 20 20" fill="currentColor">
+                                    <path d="M3 1a1 1 0 000 2h1.22l.305 1.222a.997.997 0 00.01.042l1.358 5.43-.893.892C3.74 11.846 4.632 14 6.414 14H15a1 1 0 000-2H6.414l1-1H14a1 1 0 00.894-.553l3-6A1 1 0 0017 3H6.28l-.31-1.243A1 1 0 005 1H3zM16 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM6.5 18a1.5 1.5 0 100-3 1.5 1.5 0 000 3z" />
+                                </svg>
+                                <span class="mx-1">Add to cart</span>
+                            </button>
+                        </div>
+
+                        <div class="flex flex-col items-center justify-center w-full max-w-lg mx-auto">
+                            <img class="object-cover w-full rounded-md h-72 xl:h-80 -mt-20" src="./images/airpods.jpg" alt="T-Shirt">
+                            <h4 class="mt-2 text-lg font-medium text-gray-700 dark:text-gray-200"> Airpods GEN 2</h4>
+                            <p class="text-blue-500">129dt</p>
+
+                            <button class="flex items-center justify-center w-full px-2 py-2 mt-4 font-medium tracking-wide text-white capitalize transition-colors duration-200 transform bg-gray-800 rounded-md hover:bg-gray-700 focus:outline-none focus:bg-gray-700">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 mx-1" viewBox="0 0 20 20" fill="currentColor">
+                                    <path d="M3 1a1 1 0 000 2h1.22l.305 1.222a.997.997 0 00.01.042l1.358 5.43-.893.892C3.74 11.846 4.632 14 6.414 14H15a1 1 0 000-2H6.414l1-1H14a1 1 0 00.894-.553l3-6A1 1 0 0017 3H6.28l-.31-1.243A1 1 0 005 1H3zM16 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM6.5 18a1.5 1.5 0 100-3 1.5 1.5 0 000 3z" />
+                                </svg>
+                                <span class="mx-1">Add to cart</span>
+                            </button>
+                        </div>
+
+                        <div class="flex flex-col items-center justify-center w-full max-w-lg mx-auto">
+                            <img class="object-cover w-full rounded-md h-72 xl:h-80 -mt-20" src="./images/Ecouteur-sans-fil-de-jeu.jpg" alt="T-Shirt">
+                            <h4 class="mt-2 text-lg font-medium text-gray-700 dark:text-gray-200">Airpods BW00</h4>
+                            <p class="text-blue-500">69dt</p>
+
+                            <button class="flex items-center justify-center w-full px-2 py-2 mt-4 font-medium tracking-wide text-white capitalize transition-colors duration-200 transform bg-gray-800 rounded-md hover:bg-gray-700 focus:outline-none focus:bg-gray-700">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 mx-1" viewBox="0 0 20 20" fill="currentColor">
+                                    <path d="M3 1a1 1 0 000 2h1.22l.305 1.222a.997.997 0 00.01.042l1.358 5.43-.893.892C3.74 11.846 4.632 14 6.414 14H15a1 1 0 000-2H6.414l1-1H14a1 1 0 00.894-.553l3-6A1 1 0 0017 3H6.28l-.31-1.243A1 1 0 005 1H3zM16 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM6.5 18a1.5 1.5 0 100-3 1.5 1.5 0 000 3z" />
+                                </svg>
+                                <span class="mx-1">Add to cart</span>
+                            </button>
+                        </div>
+
+                        <div class="flex flex-col items-center justify-center w-full max-w-lg mx-auto">
+                            <img class="object-cover w-full rounded-md h-72 xl:h-80 -mt-20" src="./images/hoco.jpg" alt="T-Shirt">
+                            <h4 class="mt-2 text-lg font-medium text-gray-700 dark:text-gray-200">Airpods Hoco ew49</h4>
+                            <p class="text-blue-500">109dt</p>
+
+                            <button class="flex items-center justify-center w-full px-2 py-2 mt-4 font-medium tracking-wide text-white capitalize transition-colors duration-200 transform bg-gray-800 rounded-md hover:bg-gray-700 focus:outline-none focus:bg-gray-700">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 mx-1" viewBox="0 0 20 20" fill="currentColor">
+                                    <path d="M3 1a1 1 0 000 2h1.22l.305 1.222a.997.997 0 00.01.042l1.358 5.43-.893.892C3.74 11.846 4.632 14 6.414 14H15a1 1 0 000-2H6.414l1-1H14a1 1 0 00.894-.553l3-6A1 1 0 0017 3H6.28l-.31-1.243A1 1 0 005 1H3zM16 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM6.5 18a1.5 1.5 0 100-3 1.5 1.5 0 000 3z" />
+                                </svg>
+                                <span class="mx-1">Add to cart</span>
+                            </button>
+                        </div>
+
+                    </div>
+                    <div class="grid grid-cols-1 gap-8 mt-8 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+                        <div class="flex flex-col items-center justify-center w-full max-w-lg mx-auto">
+                            <img class="object-cover w-full rounded-md h-72 xl:h-80 mb-4" src="./images/haylou x1.jpg" alt="T-Shirt">
+                            <h4 class="mt-2 text-lg font-medium text-gray-700 dark:text-gray-200">Airpods Haylou X1 NEO</h4>
+                            <p class="text-blue-500">69dt</p>
+
+                            <button class="flex items-center justify-center w-full px-2 py-2 mt-4 font-medium tracking-wide text-white capitalize transition-colors duration-200 transform bg-gray-800 rounded-md hover:bg-gray-700 focus:outline-none focus:bg-gray-700">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 mx-1" viewBox="0 0 20 20" fill="currentColor">
+                                    <path d="M3 1a1 1 0 000 2h1.22l.305 1.222a.997.997 0 00.01.042l1.358 5.43-.893.892C3.74 11.846 4.632 14 6.414 14H15a1 1 0 000-2H6.414l1-1H14a1 1 0 00.894-.553l3-6A1 1 0 0017 3H6.28l-.31-1.243A1 1 0 005 1H3zM16 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM6.5 18a1.5 1.5 0 100-3 1.5 1.5 0 000 3z" />
+                                </svg>
+                                <span class="mx-1">Add to cart</span>
+                            </button>
+                        </div>
+
+                        <div class="flex flex-col items-center justify-center w-full max-w-lg mx-auto">
+                            <img class="object-cover w-full rounded-md h-72 xl:h-80 mb-4" src="./images/wie.jpg" alt="T-Shirt">
+                            <h4 class="mt-2 text-lg font-medium text-gray-700 dark:text-gray-200"> AIRPODS WIE</h4>
+                            <p class="text-blue-500">49dt</p>
+
+                            <button class="flex items-center justify-center w-full px-2 py-2 mt-4 font-medium tracking-wide text-white capitalize transition-colors duration-200 transform bg-gray-800 rounded-md hover:bg-gray-700 focus:outline-none focus:bg-gray-700">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 mx-1" viewBox="0 0 20 20" fill="currentColor">
+                                    <path d="M3 1a1 1 0 000 2h1.22l.305 1.222a.997.997 0 00.01.042l1.358 5.43-.893.892C3.74 11.846 4.632 14 6.414 14H15a1 1 0 000-2H6.414l1-1H14a1 1 0 00.894-.553l3-6A1 1 0 0017 3H6.28l-.31-1.243A1 1 0 005 1H3zM16 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM6.5 18a1.5 1.5 0 100-3 1.5 1.5 0 000 3z" />
+                                </svg>
+                                <span class="mx-1">Add to cart</span>
+                            </button>
+                        </div>
+
+                        <div class="flex flex-col items-center justify-center w-full max-w-lg mx-auto">
+                            <img class="object-cover w-full rounded-md h-72 xl:h-80 mb-4" src="./images/GT7.jpg" alt="T-Shirt">
+                            <h4 class="mt-2 text-lg font-medium text-gray-700 dark:text-gray-200">Airpods GT7</h4>
+                            <p class="text-blue-500">89dt</p>
+
+                            <button class="flex items-center justify-center w-full px-2 py-2 mt-4 font-medium tracking-wide text-white capitalize transition-colors duration-200 transform bg-gray-800 rounded-md hover:bg-gray-700 focus:outline-none focus:bg-gray-700">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 mx-1" viewBox="0 0 20 20" fill="currentColor">
+                                    <path d="M3 1a1 1 0 000 2h1.22l.305 1.222a.997.997 0 00.01.042l1.358 5.43-.893.892C3.74 11.846 4.632 14 6.414 14H15a1 1 0 000-2H6.414l1-1H14a1 1 0 00.894-.553l3-6A1 1 0 0017 3H6.28l-.31-1.243A1 1 0 005 1H3zM16 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM6.5 18a1.5 1.5 0 100-3 1.5 1.5 0 000 3z" />
+                                </svg>
+                                <span class="mx-1">Add to cart</span>
+                            </button>
+                        </div>
+
+                        <div class="flex flex-col items-center justify-center w-full max-w-lg mx-auto">
+                            <img class="object-cover w-full rounded-md h-72 xl:h-80 mb-4" src="./images/rouge.jpg" alt="T-Shirt">
+                            <h4 class="mt-2 text-lg font-medium text-gray-700 dark:text-gray-200">Airpods ART</h4>
+                            <p class="text-blue-500">39dt</p>
+
+                            <button class="flex items-center justify-center w-full px-2 py-2 mt-4 font-medium tracking-wide text-white capitalize transition-colors duration-200 transform bg-gray-800 rounded-md hover:bg-gray-700 focus:outline-none focus:bg-gray-700">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 mx-1" viewBox="0 0 20 20" fill="currentColor">
+                                    <path d="M3 1a1 1 0 000 2h1.22l.305 1.222a.997.997 0 00.01.042l1.358 5.43-.893.892C3.74 11.846 4.632 14 6.414 14H15a1 1 0 000-2H6.414l1-1H14a1 1 0 00.894-.553l3-6A1 1 0 0017 3H6.28l-.31-1.243A1 1 0 005 1H3zM16 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM6.5 18a1.5 1.5 0 100-3 1.5 1.5 0 000 3z" />
+                                </svg>
+                                <span class="mx-1">Add to cart</span>
+                            </button>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+      </div>
+</body>
+</html>
